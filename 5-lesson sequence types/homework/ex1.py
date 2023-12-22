@@ -23,6 +23,7 @@ def numlist(num):
             sorted = True 
             for i in range(0, index):
                 if numlist[i]>numlist[i+1]:
+                    sorted = False
                     numlist[i],numlist[i+1] = numlist[i+1], numlist[i]
         return numlist
 
