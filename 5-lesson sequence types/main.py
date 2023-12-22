@@ -46,9 +46,7 @@
 
 # print(bubble_sort([10,2,4,12,8,11]))     
 
-def bubble_sort(arr):
-    n = len
-        
+
         
         
 
