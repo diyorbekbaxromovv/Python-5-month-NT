@@ -7,7 +7,7 @@ def quick_sort(my_list):
     
     else:
         pivot = my_list.pop()
-        print(pivot)
+        # print(pivot)
         
     items_katta = []
     items_kichik = []
@@ -18,5 +18,5 @@ def quick_sort(my_list):
         else:
             items_kichik.append(i)
     
-    print(items_katta, items_kichik)
-quick_sort([17,15,2,4,25,6,7])
+    return quick_sort(items_kichik) + [pivot] + quick_sort(items_katta)
+print(quick_sort([17,15,2,4,25,6,7]))
