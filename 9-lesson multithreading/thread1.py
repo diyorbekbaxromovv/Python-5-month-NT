@@ -3,20 +3,38 @@ import time
 
 start = time.perf_counter()
 
-def index():
+# def index():
+#     print("Running function...")
+#     time.sleep(1)
+#     print("Complete function...")
+
+# threads = []
+
+# for _ in range(10):
+#     t = threading.Thread(target=index)
+#     t.start()
+#     threads.append(t)
+    
+# for thread in threads:
+#     thread.join()
+    
+#################
+def index(secs):
     print("Running function...")
-    time.sleep(1)
+    time.sleep(secs)
     print("Complete function...")
 
 threads = []
 
 for _ in range(10):
-    t = threading.Thread(target=index)
+    t = threading.Thread(target=index,args=[1.5])
     t.start()
     threads.append(t)
     
 for thread in threads:
     thread.join()
+
+###########    
 # thread1 = threading.Thread(target=index)
 # thread2 = threading.Thread(target=index)
 
