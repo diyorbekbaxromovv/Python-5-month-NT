@@ -1,6 +1,6 @@
 #   C dasturlash tilida строго-типизированный bo'ladi o'zgaruvchi yozilishidan type ni yozish kerak va bitta nomli o'zgaruvchi yaratilsa eski o'zga
 # ruvchini hotirasi o'chmaydi chunki type o'zgarmaydi
-#  Python tilida dynamic bo'ladi va bitta nomli o'zgarubchi yaratilsa eski o'zgaruchi hotirasi o'chib ketadi chunki python dynamic shuning uchun yangi 
+#  Python tilida dynamic bo'ladi va bitta nomli o'zgaruvchi yaratilsa eski o'zgaruchi hotirasi o'chib ketadi chunki python dynamic shuning uchun yangi 
 # boshqa typeda yaratilishi mumkin
 # #### shu narsa garbage collection deyiladi
 
