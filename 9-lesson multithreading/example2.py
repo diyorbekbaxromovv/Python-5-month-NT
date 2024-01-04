@@ -23,7 +23,7 @@ img_urls = [
 ]
 
 start = time.perf_counter()
-
+#thread
 def image_download(img_url):
 #     img_b = requests.get(img_url)
     
