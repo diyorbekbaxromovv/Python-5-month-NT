@@ -3,7 +3,7 @@ import time
 import os
 
 def foo():
-    for i in os.walk('H\\'):
+    for i in os.walk('H:\\'):
         yield i[0]
 
 def clock():
