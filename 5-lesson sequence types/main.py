@@ -29,23 +29,41 @@
 
 # print(binary_seach([5,7,9,79,45,56], 45))
         
-# def bubble_sort(my_list):
-#     len_index = len(my_list)-1   
-#     sorted = False
-#     count = 0
-#     while not sorted:
-#         count = count + 1
-#         sorted = True
+def bubble_sort(my_list):
+    len_index = len(my_list)-1   
+    sorted = False
+    count = 0
+    while not sorted:
+        count = count + 1
+        sorted = True
         
-#         for i in range(0, len_index):
-#             if my_list[i]>my_list[i+1]:
-#                 sorted = False
-#                 my_list[i], my_list[i+1]=my_list[i+1], my_list[i]
+        for i in range(0, len_index):
+            if my_list[i]>my_list[i+1]:
+                sorted = False
+                my_list[i], my_list[i+1]=my_list[i+1], my_list[i]
                 
-#     return f"{my_list},sikllar soni {count}"
+    return f"{my_list},sikllar soni {count}"
 
-# print(bubble_sort([10,2,4,12,8,11]))     
+print(bubble_sort([10,2,4,12,8,11]))     
 
+
+def bubble_sort(arr):
+    n = len(arr)
+
+    # Внешний цикл для проходов
+    for i in range(n):
+        # Внутренний цикл для сравнения и перемещения элементов
+        for j in range(0, n - i - 1):
+            # Сравниваем соседние элементы
+            if arr[j] > arr[j + 1]:
+                # Меняем местами, если текущий элемент больше следующего
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+# Пример использования
+my_list = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(my_list)
+
+print("Отсортированный массив:", my_list)
 
         
         

@@ -18,3 +18,6 @@ with Open_file("sample7.txt", "w") as file:
     file.write("Salom Dunyo")
     
 print(file.closed)
+
+
+# kontext manager - bu obyrkt qaysiki enter va exit metodlarini aniqlaydi
